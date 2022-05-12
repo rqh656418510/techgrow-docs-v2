@@ -3,7 +3,7 @@
 ### 依赖环境
 
 - [Node.js v14+](https://nodejs.org/en/)
-- [VuePress v1.x](https://v2.vuepress.vuejs.org/zh/)
+- [VuePress v2.x](https://v2.vuepress.vuejs.org/zh/)
 - [Yarn v1 classic](https://classic.yarnpkg.com/zh-Hans/)
 
 ### 项目构建
