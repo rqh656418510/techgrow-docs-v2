@@ -1,4 +1,5 @@
 import { navbar, sidebar } from './configs'
+const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('@vuepress/theme-default')
 
 module.exports = {
@@ -32,5 +33,16 @@ module.exports = {
     notFound: ['这是一个 404 页面'],
     openInNewWindow: '在新窗口打开',
     editLinkText: '在 GitHub 上编辑此页'
-  })
+  }),
+
+  // 插件配置
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '',
+        }
+      }
+    })
+  ],
 }
