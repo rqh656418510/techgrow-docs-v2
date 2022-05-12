@@ -1,5 +1,10 @@
 ## TechGrow 开放平台官方文档
 
+### 依赖环境
+
+- [Node.js v14+](https://nodejs.org/en/)
+- [Yarn v1 classic](https://classic.yarnpkg.com/zh-Hans/)
+
 ### 项目构建
 
 ``` sh
