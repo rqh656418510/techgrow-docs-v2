@@ -28,6 +28,6 @@ export const zh: NavbarConfig = [
   },
   {
     text: 'GitHub',
-    link: 'https://github.com/rqh656418510/techgrow-docs',
+    link: 'https://github.com/rqh656418510/techgrow-docs-v2',
   }
 ]
