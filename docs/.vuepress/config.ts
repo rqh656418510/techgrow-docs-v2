@@ -2,18 +2,16 @@ import { navbar, sidebar } from './configs'
 const { defaultTheme } = require('@vuepress/theme-default')
 
 module.exports = {
-  // 站点基础信息
+  // 基础信息配置
   base: '/',
   lang: 'zh-CN',
   title: 'TechGrow 开放平台',
   description: 'TechGrow 开放平台的官方中文文档',
-
   head: [
-    ['link', { rel: 'icon', type: 'image/png', sizes: '30x30', href: `/images/icons/favicon-30x30.png` }],
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
-    ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }]
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '30x30', href: `/images/icons/favicon-30x30.png` }]
   ],
-
 
   // 默认主题配置
   theme: defaultTheme({

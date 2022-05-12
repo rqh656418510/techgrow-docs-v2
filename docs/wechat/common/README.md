@@ -109,9 +109,3 @@ description: 博客导流微信公众号
 点击 "阅读全文按钮"，会弹出微信公众号的二维码窗口，如下图所示：
 
 <img src='https://www.techgrow.cn/uploads/2022/02/28/202980a480fd463c814a31d5cc3fb2a1.png' style='pointer-events:none;'/>
-
-## 获取帮助
-
-如何使用上遇到问题，你可以发送邮件到 `656418510@qq.com`，或者扫描下方的微信群二维码，笔者会提供一定的技术支持。
-
-<img src='https://www.techgrow.cn/img/wx-group-qr-techgrow.png' style='pointer-events:none;'/>

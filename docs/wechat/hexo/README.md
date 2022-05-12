@@ -102,9 +102,3 @@ updated: 2022-01-12 22:25:49
 ## 在线演示
 
 - [官方博客](https://www.techgrow.cn/posts/52f22f9b.html)
-
-## 获取帮助
-
-如何使用上遇到问题，你可以发送邮件到 `656418510@qq.com`，或者扫描下方的微信群二维码，笔者会提供一定的技术支持。
-
-<img src='https://www.techgrow.cn/img/wx-group-qr-techgrow.png' style='pointer-events:none;'/>
