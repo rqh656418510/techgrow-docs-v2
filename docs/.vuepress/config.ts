@@ -15,7 +15,10 @@ module.exports = {
 
   // 默认主题配置
   theme: defaultTheme({
+    editLinks: true,
     docsDir: 'docs',
+    docsBranch: 'main',
+    repo: 'rqh656418510/techgrow-docs-v2',
     navbar: navbar.zh,
     sidebar: sidebar.zh,
     tip: '提示',

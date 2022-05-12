@@ -10,7 +10,7 @@ export const zh: NavbarConfig = [
     children: ['/wechat/common/README.md', '/wechat/hexo/README.md', '/wechat/VuePress/README.md']
   },
   {
-    text: `开源插件`,
+    text: '开源插件',
     children: [
       {
         text: 'Hexo 插件',
@@ -25,9 +25,5 @@ export const zh: NavbarConfig = [
   {
     text: '了解更多',
     children: ['/contact/README.md']
-  },
-  {
-    text: 'GitHub',
-    link: 'https://github.com/rqh656418510/techgrow-docs-v2',
   }
 ]
