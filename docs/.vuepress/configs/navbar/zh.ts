@@ -1,7 +1,7 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const zh: NavbarConfig = [{
-  text: '指南',
+  text: '首页',
   link: '/README.md'
 },
 {
@@ -22,11 +22,11 @@ export const zh: NavbarConfig = [{
 {
   text: '开源插件',
   children: [{
-    text: 'Hexo 插件',
+    text: 'Hexo 导流插件',
     link: 'https://github.com/rqh656418510/hexo-readmore',
   },
   {
-    text: 'VuePress 插件',
+    text: 'VuePress 导流插件',
     link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
   }]
 },
