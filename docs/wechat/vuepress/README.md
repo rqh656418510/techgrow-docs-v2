@@ -1,11 +1,15 @@
 ---
-title: VuePress 博客
-description: VuePress 博客导流微信公众号
+title: VuePress v1 博客
+description: VuePress v1 博客导流微信公众号
 ---
 
 ## 前言
 
-VuePress 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
+VuePress v1 博客建议安装 [vuepress-plugin-readmore-popular](https://github.com/rqh656418510/vuepress-plugin-readmore-popular) 插件，将 [TechGrow](https://open.techgrow.cn) 的免费微信公众号导流工具整合到博客中，用户扫码关注微信公众号后可以解锁全站文章，让微信公众号的粉丝数躺着增长。
+
+::: tip 提示
+`vuepress-plugin-readmore-popular` 插件只支持 VuePress v1，如果你使用的 VuePress v2，请安装 [vuepress-plugin-readmore-popular-next](https://github.com/rqh656418510/vuepress-plugin-readmore-popular-next) 插件。
+:::
 
 ## 注册博客
 
@@ -53,7 +57,7 @@ module.exports = {
       keyword: 'Tech',                    
       // 已申请的微信公众号二维码链接
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
-      // 文章内容选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置（可选）
+      // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置（可选）
       selector: 'div.theme-default-content',
       // CDN 加速链接（可选）
       libUrl: 'https://qiniu.techgrow.cn/js/readmore.js',

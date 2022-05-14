@@ -15,7 +15,7 @@ export const zh: NavbarConfig = [{
     link: '/wechat/hexo/README.md'
   },
   {
-    text: 'VuePress 博客',
+    text: 'VuePress v1 博客',
     link: '/wechat/vuepress/README.md'
   }]
 },
@@ -26,7 +26,7 @@ export const zh: NavbarConfig = [{
     link: 'https://github.com/rqh656418510/hexo-readmore',
   },
   {
-    text: 'VuePress 导流插件',
+    text: 'VuePress v1 导流插件',
     link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
   }]
 },
