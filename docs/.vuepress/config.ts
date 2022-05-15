@@ -3,8 +3,9 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('@vuepress/theme-default')
 
 module.exports = {
-  // 基础信息配置
-  base: '/',
+
+  // 基础配置
+  base: '/v2/',
   lang: 'zh-CN',
   title: 'TechGrow 开放平台',
   description: 'TechGrow 开放平台的官方中文文档',
