@@ -22,13 +22,13 @@ vuepress-plugin-readmore-popular 插件只支持 VuePress v1，暂时不支持 V
 
 浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网 ，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下 `博客 ID`，后面的步骤会使用到
 
-<img src='https://www.techgrow.cn/uploads/2022/02/28/717e14eb59dd44dea62d6a0b7549abfd.png' style='pointer-events:none;'/>
+![](https://www.techgrow.cn/uploads/2022/02/28/717e14eb59dd44dea62d6a0b7549abfd.png)
 
 ## 设置公众号
 
 在微信公众号的后台管理页面，菜单栏里选择 `自动回复` - `关键词回复`，启用 `自动回复`，然后点击 `添加回复` 按钮：
 
-<img src='https://www.techgrow.cn/uploads/2022/02/28/em64p7w8wlqtt0rsjop0jjeywx29m25w.png' style='pointer-events:none;'/>
+![](https://www.techgrow.cn/uploads/2022/02/28/em64p7w8wlqtt0rsjop0jjeywx29m25w.png)
 
 填写 `规则名称`、`关键词（当初你在 TechGrow 中设置的）`、`回复内容` 选择 `文字`，然后 `回复文字` 的内容填写获取博客解锁验证码的链接，如下所示（请自行更改 `xxxxx-xxxxxxxxx-xxx` 为你申请到的博客 ID）
 
@@ -36,7 +36,7 @@ vuepress-plugin-readmore-popular 插件只支持 VuePress v1，暂时不支持 V
 <a href="https://open.techgrow.cn/#/readmore/captcha/generate?blogId=xxxxx-xxxxxxxxx-xxx">点击链接，获取博客解锁验证码</a>
 ```
 
-<img src='https://www.techgrow.cn/uploads/2022/02/28/yd89wbdji196ixtwzgzamw37fbein1ia.png' style='pointer-events:none;'/>
+![](https://www.techgrow.cn/uploads/2022/02/28/yd89wbdji196ixtwzgzamw37fbein1ia.png)
 
 此时，当读者关注你的微信公众号，并输入关键词后（比如我设置的关键词就是 `tech`），那么读者就会自动接收到获取博客解锁验证码的链接
 
@@ -64,20 +64,37 @@ module.exports = {
       keyword: 'Tech',                    
       // 已申请的微信公众号二维码链接
       qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png',
-      // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置（可选）
+      // 文章内容的选择器，若使用的不是官方默认主题，则需要根据第三方的主题来设置
       selector: 'div.theme-default-content',
-      // 自定义的 JS 资源链接，可用于 CDN 加速（可选）
+      // 自定义的 JS 资源链接，可用于 CDN 加速
       libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js',
-      // 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
+      // 自定义的 CSS 资源链接，可用于适配不同风格的博客
       cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/vuepress.css',
-      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具（可选）
-      random: 1,
-      // 排除添加导流工具的文章链接，格式为 ['/webpack', '/gulp/*', '/node/*/io']，支持使用路径、通配符、正则表达式的匹配规则（可选）
-      excludes: []
+      // 文章排除添加导流工具的URL规则，支持使用路径、通配符、正则表达式的匹配规则
+      excludes: { strExp: [], regExp: [] },
+      // 是否反转排除规则的配置，即只有符合排除规则的文章才会添加导流工具
+      reverse: false,
+      // 每篇文章随机添加导流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加导流工具
+      random: 1
     }]
   ]
 }
 ```
+
+## 插件参数说明
+
+| 参数     | 类型        | 必填 | 默认值                                               | 说明 |
+| -------- | ----------- | ---- | ---------------------------------------------------- | ---- |
+| blogId   | String      | 是   | 无                                                   | -    |
+| name     | String      | 是   | 无                                                   | -    |
+| keyword  | String      | 是   | 无                                                   | -    |
+| qrcode   | String      | 是   | 无                                                   | -    |
+| selector | String      | 否   | div.theme-default-content                            | -    |
+| libUrl   | String      | 否   | https://qiniu.techgrow.cn/readmore/dist/readmore.js  | -    |
+| cssUrl   | String      | 否   | https://qiniu.techgrow.cn/readmore/dist/vuepress.css | -    |
+| excludes | Json Object | 否   | { strExp: [ ], regExp: [ ] }                         | -    |
+| reverse  | Boolean     | 否   | false                                                | -    |
+| random   | Number      | 否   | 1                                                    | -    |
 
 ## 验证插件效果
 
@@ -91,7 +108,7 @@ module.exports = {
 
 ## 取消阅读限制
 
-若希望关闭部分文章的微信公众号导流功能，可以使用插件的 `excludes` 参数来实现。值得一提的是，`excludes` 参数的值是一个数组，其中的数组元素可以是字符串或者正则表达式。
+若希望关闭部分文章的微信公众号导流功能，可以使用插件的 `excludes` 参数来实现。值得一提的是，`excludes` 的参数值是一个 JSON 对象，其中的 `strExp` 属性是路径和通配符规则的字符串数组，而 `regExp` 属性是正则表达式的字符串数组。
 
 - 根据 URL 路径，关闭某篇文章的导流功能
 
@@ -99,7 +116,8 @@ module.exports = {
 module.exports = {
   plugins: [
     ['vuepress-plugin-readmore-popular', {
-      excludes: ['/fontend/webpack']
+      // 排除 URL 为 `/fontend/webpack` 的文章
+      excludes: { strExp: ['/fontend/webpack'] },
     }]
   ]
 }
@@ -111,7 +129,9 @@ module.exports = {
 module.exports = {
   plugins: [
     ['vuepress-plugin-readmore-popular', {
-      excludes: ['/fontend/*', '/backend/*/io']
+      // 排除 URL 以 `/fontend` 开头的文章
+      // 排除 URL 为 `/backend/python/io` 的文章
+      excludes: { strExp: ['/fontend/*', '/backend/*/io'] },
     }]
   ]
 }
@@ -124,11 +144,30 @@ module.exports = {
 module.exports = {
   plugins: [
     ['vuepress-plugin-readmore-popular', {
-      excludes: [/\/fontend\/.+?\/note/]
+      // 排除 URL 不以 `/fontend` 开头的文章
+      excludes: { regExp: ['^(?!\/fontend).*'] },
     }]
   ]
 }
 ```
+
+- 混合使用
+
+``` js
+module.exports = {
+  plugins: [
+    ['vuepress-plugin-readmore-popular', {
+      excludes: { strExp: ['/webpack', '/fontend/*', '/backend/*/io'], regExp: ['^(?!\/php).*'] },
+    }]
+  ]
+}
+```
+
+::: tip 提示
+- 1. 文章 URL 优先匹配 `strExp` 规则，然后再匹配 `regExp` 规则
+- 2. 文章 URL 一旦满足 `strExp` 规则，则不会再匹配 `regExp` 规则
+- 3. 如果希望符合规则的文章才添加导流工具，则可以使用 `reverse : true` 配置参数实现
+:::
 
 ## 自定义样式
 
