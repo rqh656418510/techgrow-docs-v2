@@ -8,7 +8,7 @@ module.exports = {
   base: '/v2/',
   lang: 'zh-CN',
   title: 'TechGrow 开放平台 V2',
-  description: 'TechGrow 开放平台的官方中文文档 V2',
+  description: '专注于自媒体引流的开放平台，支持公众号、百家号、头条号、抖音号等自媒体平台的引流。',
   head: [
     ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],

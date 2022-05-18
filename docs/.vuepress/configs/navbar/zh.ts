@@ -5,7 +5,7 @@ export const zh: NavbarConfig = [{
   link: '/README.md'
 },
 {
-  text: '公众号导流',
+  text: '公众号引流',
   children: [{
     text: '主流博客',
     link: '/wechat/common/README.md'
@@ -22,11 +22,11 @@ export const zh: NavbarConfig = [{
 {
   text: '开源插件',
   children: [{
-    text: 'Hexo 导流插件',
+    text: 'Hexo 引流插件',
     link: 'https://github.com/rqh656418510/hexo-readmore',
   },
   {
-    text: 'VuePress v1 导流插件',
+    text: 'VuePress v1 引流插件',
     link: 'https://github.com/rqh656418510/vuepress-plugin-readmore-popular',
   }]
 },
