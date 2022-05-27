@@ -33,6 +33,10 @@ export const zh: NavbarConfig = [{
 {
   text: '了解更多',
   children: [{
+    text: '开放平台',
+    link: 'https://open.techgrow.cn/'
+  },
+  {
     text: '在线演示',
     link: '/demo/README.md'
   },
