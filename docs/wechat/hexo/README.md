@@ -19,13 +19,13 @@ Hexo 博客建议安装 [hexo-readmore](https://github.com/rqh656418510/hexo-rea
 
 浏览器访问 [TechGrow](https://open.techgrow.cn) 的官网 ，注册并登录账号后，进入博客的后台管理页面。首先点击左侧的菜单 `博客注册`，然后点击 `新增` 按钮，添加自己博客的信息。博客注册成功后，记录下 `博客 ID`，后面的步骤会使用到
 
-![](https://www.techgrow.cn/uploads/2022/02/28/717e14eb59dd44dea62d6a0b7549abfd.png)
+<img :src="$withBase('/images/guide/717e14eb59dd44dea62d6a0b7549abfd.png')">
 
 ## 设置公众号
 
 在微信公众号的后台管理页面，菜单栏里选择 `自动回复` - `关键词回复`，启用 `自动回复`，然后点击 `添加回复` 按钮：
 
-![](https://www.techgrow.cn/uploads/2022/02/28/em64p7w8wlqtt0rsjop0jjeywx29m25w.png)
+<img :src="$withBase('/images/guide/em64p7w8wlqtt0rsjop0jjeywx29m25w.png')">
 
 填写 `规则名称`、`关键词（当初你在 TechGrow 中设置的）`、`回复内容` 选择 `文字`，然后 `回复文字` 的内容填写获取博客解锁验证码的链接，如下所示（请自行更改 `xxxxx-xxxxxxxxx-xxx` 为你申请到的博客 ID）
 
@@ -33,7 +33,7 @@ Hexo 博客建议安装 [hexo-readmore](https://github.com/rqh656418510/hexo-rea
 <a href="https://open.techgrow.cn/#/readmore/captcha/generate?blogId=xxxxx-xxxxxxxxx-xxx">点击链接，获取博客解锁验证码</a>
 ```
 
-![](https://www.techgrow.cn/uploads/2022/02/28/yd89wbdji196ixtwzgzamw37fbein1ia.png)
+<img :src="$withBase('/images/guide/yd89wbdji196ixtwzgzamw37fbein1ia.png')">
 
 此时，当读者关注你的微信公众号，并输入关键词后（比如我设置的关键词就是 `tech`），那么读者就会自动接收到获取博客解锁验证码的链接
 
@@ -56,6 +56,7 @@ readmore:
   name: '全栈技术驿站'                                                  # 已申请的微信公众号名称
   keyword: 'tech'                                                     # 已申请的微信公众号回复关键词
   qrcode: 'https://www.techgrow.cn/img/wx_mp_qr.png'                  # 已申请的微信公众号二维码链接
+  # expires: 365                                                      # 文章解锁后凭证的有效天数（可选）
   # libUrl: 'https://qiniu.techgrow.cn/readmore/dist/readmore.js'     # 自定义的 JS 资源链接，可用于 CDN 加速（可选）
   # cssUrl: 'https://qiniu.techgrow.cn/readmore/dist/hexo.css'        # 自定义的 CSS 资源链接，可用于适配不同风格的博客（可选）
   # random: 0.8                                                       # 每篇文章随机添加微信公众号引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具（可选）
@@ -87,11 +88,11 @@ $ hexo server
 
 打开文章页面，若文章自动隐藏了部分内容，并且出现了 `阅读全文` 按钮，则说明引流插件正常运行，如下图所示：
 
-![](https://www.techgrow.cn/uploads/2022/02/28/3f53ab36dfa84fb99a6508ae46e5373a.png)
+<img :src="$withBase('/images/guide/3f53ab36dfa84fb99a6508ae46e5373a.png')">
 
 点击 `阅读全文` 按钮，会弹出微信公众号的二维码窗口，如下图所示：
 
-![](https://www.techgrow.cn/uploads/2022/02/28/202980a480fd463c814a31d5cc3fb2a1.png)
+<img :src="$withBase('/images/guide/202980a480fd463c814a31d5cc3fb2a1.png')">
 
 ## 取消阅读限制
 
