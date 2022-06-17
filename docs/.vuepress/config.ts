@@ -70,5 +70,13 @@ module.exports = {
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
       random: 1
     })
-  ]
+  ],
+
+  // Markdown配置
+  markdown: {
+    code: {
+      lineNumbers: false
+    }
+  }
+
 }
