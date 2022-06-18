@@ -58,7 +58,7 @@ module.exports = {
       hostname: 'https://docs.techgrow.cn',
     }),
     baiduSeoPlugin({
-      ignoreLocal: false,
+      ignoreLocal: true,
       hm: '43c937a5b15d4206e725c4d25d1168d2'
     }),
     readmorePlugin({
