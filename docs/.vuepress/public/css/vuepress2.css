@@ -26,13 +26,13 @@
     line-height: 36px;
     font-size: 15px;
     text-align: center;
-    border: 1px solid rgb(222, 104, 109);
-    color: rgb(222, 104, 109);
+    border: 1px solid rgb(61,175,124);
+    color: rgb(61,175,124);
     background: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 6px;
     margin-left: -35px;
-    border-bottom: 1px solid rgb(222, 104, 109) !important;
+    border-bottom: 1px solid rgb(61,175,124) !important;
 }
 
 #readmore-modal-mask {
@@ -83,15 +83,15 @@
 }
 
 #readmore-blog-name {
-    color: rgb(222, 104, 109);
+    color: rgb(61,175,124);
 }
 
 #readmore-blog-keyword {
-    color: rgb(222, 104, 109);
+    color: rgb(61,175,124);
 }
 
 #readmore-blog-forever {
-    color: rgb(222, 104, 109);
+    color: rgb(61,175,124);
 }
 
 #readmore-modal-header div span:not([id]) {
@@ -139,7 +139,7 @@
     outline: none;
     border: none;
     color: rgb(255, 255, 255);
-    background: rgb(222, 104, 109);
+    background: rgb(61,175,124);
     cursor: pointer;
 }
 
@@ -151,10 +151,10 @@
 
 .readmore-btn-mouseover {
     color: rgb(255, 255, 255) !important;
-    background: rgb(222, 104, 109) !important;
+    background: rgb(61,175,124) !important;
 }
 
 .readmore-btn-mouseout {
-    color: rgb(222, 104, 109) !important;
+    color: rgb(61,175,124) !important;
     background: rgb(255, 255, 255) !important;
 }
