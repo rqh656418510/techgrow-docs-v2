@@ -1,26 +1,26 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const zh: NavbarConfig = [{
-  text: '首页',
-  link: '/README.md'
+  text: '公众号引流',
+  link: '/'
 },
 {
-  text: '公众号引流',
+  text: '博客平台',
   children: [{
     text: '主流博客',
-    link: '/wechat/common/README.md'
+    link: '/wechat/common/'
   },
   {
     text: 'Hexo 博客',
-    link: '/wechat/hexo/README.md'
+    link: '/wechat/hexo/'
   },
   {
     text: 'VuePress v1.x 博客',
-    link: '/wechat/vuepress/README.md'
+    link: '/wechat/vuepress/'
   },
   {
     text: 'VuePress v2.x 博客',
-    link: '/wechat/vuepress2/README.md'
+    link: '/wechat/vuepress2/'
   }]
 },
 {
@@ -42,11 +42,11 @@ export const zh: NavbarConfig = [{
   text: '了解更多',
   children: [{
     text: '在线演示',
-    link: '/demo/README.md'
+    link: '/demo/'
   },
   {
     text: '联系方式',
-    link: '/contact/README.md'
+    link: '/contact/'
   },
   {
     text: '官方网站',
