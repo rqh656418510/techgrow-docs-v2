@@ -3,6 +3,7 @@ const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('@vuepress/theme-default')
 const { sitemapPlugin } = require("vuepress-plugin-sitemap2");
 const { copyCodePlugin } = require('vuepress-plugin-copy-code2')
+const { baiduSeoPlugin } = require('vuepress-plugin-baidu-seo-next')
 const { readmorePlugin } = require('vuepress-plugin-readmore-popular-next')
 
 module.exports = {
@@ -55,6 +56,10 @@ module.exports = {
     sitemapPlugin({
       excludeUrls: ['/404.html'],
       hostname: 'https://docs.techgrow.cn',
+    }),
+    baiduSeoPlugin({
+      ignoreLocal: false,
+      hm: '43c937a5b15d4206e725c4d25d1168d2'
     }),
     readmorePlugin({
       // 已申请的博客 ID
