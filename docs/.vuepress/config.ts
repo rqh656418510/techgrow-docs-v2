@@ -2,6 +2,7 @@ import { navbar, sidebar } from './configs'
 const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('@vuepress/theme-default')
 const { sitemapPlugin } = require("vuepress-plugin-sitemap2");
+const { copyCodePlugin } = require('vuepress-plugin-copy-code2')
 const { readmorePlugin } = require('vuepress-plugin-readmore-popular-next')
 
 module.exports = {
@@ -40,6 +41,10 @@ module.exports = {
 
   // 插件配置
   plugins: [
+    copyCodePlugin({
+      duration: 1000,
+      showInMobile: true
+    }),
     searchPlugin({
       locales: {
         '/': {
