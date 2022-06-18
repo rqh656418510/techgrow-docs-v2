@@ -1,28 +1,22 @@
 import type { SidebarConfig } from '@vuepress/theme-default'
 
 export const zh: SidebarConfig = {
-  '/': [
-    {
-      text: '公众号引流',
-      children: ['/wechat/common/', '/wechat/hexo/', '/wechat/vuepress/', '/wechat/vuepress2/']
-    }
-  ],
   '/wechat/common': [
     {
       text: '公众号引流',
-      children: ['/wechat/common/', '/wechat/hexo/', '/wechat/vuepress/', '/wechat/vuepress2/']
+      children: ['']
     }
   ],
   '/wechat/hexo': [
     {
       text: '公众号引流',
-      children: ['/wechat/common/', '/wechat/hexo/', '/wechat/vuepress/', '/wechat/vuepress2/']
+      children: ['']
     }
   ],
   '/wechat/vuepress': [
     {
       text: '公众号引流',
-      children: ['/wechat/common/', '/wechat/hexo/', '/wechat/vuepress/', '/wechat/vuepress2/']
+      children: ['']
     }
   ],
   '/demo': [
@@ -33,7 +27,7 @@ export const zh: SidebarConfig = {
   ],
   '/contact': [
     {
-      text: '联系方式',
+      text: '',
       children: []
     }
   ]

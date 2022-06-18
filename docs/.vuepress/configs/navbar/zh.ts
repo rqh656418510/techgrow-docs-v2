@@ -2,10 +2,6 @@ import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const zh: NavbarConfig = [{
   text: '公众号引流',
-  link: '/'
-},
-{
-  text: '博客平台',
   children: [{
     text: '主流博客',
     link: '/wechat/common/'
@@ -45,7 +41,7 @@ export const zh: NavbarConfig = [{
     link: '/demo/'
   },
   {
-    text: '联系方式',
+    text: '获取帮助',
     link: '/contact/'
   },
   {
