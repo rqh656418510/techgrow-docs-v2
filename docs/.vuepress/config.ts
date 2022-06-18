@@ -1,6 +1,7 @@
 import { navbar, sidebar } from './configs'
 const { searchPlugin } = require('@vuepress/plugin-search')
 const { defaultTheme } = require('@vuepress/theme-default')
+const { sitemapPlugin } = require("vuepress-plugin-sitemap2");
 const { readmorePlugin } = require('vuepress-plugin-readmore-popular-next')
 
 module.exports = {
@@ -45,6 +46,10 @@ module.exports = {
           placeholder: '',
         }
       }
+    }),
+    sitemapPlugin({
+      excludeUrls: ['/404.html'],
+      hostname: 'https://docs.techgrow.cn',
     }),
     readmorePlugin({
       // 已申请的博客 ID
