@@ -10,7 +10,7 @@
   "devDependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.48",
     "vuepress": "^2.0.0-beta.48",
-    "vuepress-plugin-baidu-seo-next": "^2.0.0-beta.48.3",
+    "vuepress-plugin-baidu-seo-next": "^2.0.0-beta.48.4",
     "vuepress-plugin-copy-code2": "^2.0.0-beta.83",
     "vuepress-plugin-readmore-popular-next": "^2.0.0-beta.48.3",
     "vuepress-plugin-sitemap2": "^2.0.0-beta.83"
