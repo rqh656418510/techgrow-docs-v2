@@ -11,8 +11,12 @@ module.exports = {
   // 基础配置
   base: '/v2/',
   head: [
-    ['meta', { name: 'application-name', content: 'TechGrow 开放平台' }],
-    ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 开放平台' }],
+    ['meta', { 'http-equiv': 'expires', content: '0' }],
+    ['meta', { 'http-equiv': 'pragram', content: 'no-cache' }],
+    ['meta', { 'http-equiv': 'cache-control', content: 'no-cache, no-store, must-revalidate' }],
+    ['meta', { name: 'application-name', content: 'TechGrow 官方文档' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'TechGrow 官方文档' }],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ['link', { rel: 'icon', href: 'favicon.ico' }]
   ],
 
