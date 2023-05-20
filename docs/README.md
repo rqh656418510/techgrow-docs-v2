@@ -1,12 +1,6 @@
 ---
-home: true
-heroText: null
-heroImage: /hero.png
-heroImageStyle: {
-  display: block,
-  maxHeight: '130px',
-  borderRadius: '50%',
-  margin: '6rem auto 1.5rem',
-  boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
-}
+title: ''
+description: ''
 ---
+
+## [专注于自媒体引流的免费开放平台](https://open.techgrow.cn)
