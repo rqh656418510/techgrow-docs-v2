@@ -88,6 +88,8 @@ module.exports = {
       excludes: { strExp: [], regExp: ['^(?!\/v2/wechat/demo).*'] },
       // 是否反转 URL 排除规则的配置，即只有符合排除规则的文章才会添加引流工具
       reverse: false,
+      // 移动端的页面是否添加微信公众号引流工具
+      allowMobile: true,
       // 文章内容的预览高度(例如 300)
       height: 'auto',
       // 文章解锁后凭证的有效天数
@@ -95,7 +97,7 @@ module.exports = {
       // 定时校验凭证有效性的时间间隔（秒）
       interval: 30,
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
-      random: 1
+      random: 1,
     })
   ],
 
