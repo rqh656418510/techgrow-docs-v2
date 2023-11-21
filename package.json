@@ -1,21 +1,22 @@
 {
   "name": "techgrow-docs",
-  "version": "1.0.0",
+  "description": "TechGrow 官方文档",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "clean": "rimraf docs/.vuepress/dist docs/.vuepress/.cache docs/.vuepress/.temp package-lock.json"
+    "clean": "rimraf docs/.vuepress/dist docs/.vuepress/.cache docs/.vuepress/.temp"
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "vuepress": "2.0.0-beta.66",
-    "@vuepress/theme-default": "2.0.0-beta.66",
-    "@vuepress/plugin-search": "2.0.0-beta.66",
-    "vuepress-plugin-sitemap2": "2.0.0-beta.233",
-    "vuepress-plugin-copy-code2": "2.0.0-beta.233",
-    "vuepress-plugin-baidu-seo-next": "2.0.0-beta.66.1",
-    "vuepress-plugin-readmore-popular-next": "2.0.0-beta.66.2"
+    "vuepress": "2.0.0-rc.0",
+    "@vuepress/theme-default": "2.0.0-rc.0",
+    "@vuepress/plugin-search": "2.0.0-rc.0",
+    "vuepress-plugin-sitemap2": "2.0.0-rc.0",
+    "vuepress-plugin-copy-code2": "2.0.0-rc.0",
+    "vuepress-plugin-baidu-seo-next": "2.0.0-rc.0.1",
+    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.0.1"
   }
 }
