@@ -1,10 +1,11 @@
 import { navbar, sidebar } from './configs'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
-import { defaultTheme } from'@vuepress/theme-default'
-import { sitemapPlugin } from"vuepress-plugin-sitemap2";
-import { copyCodePlugin } from'vuepress-plugin-copy-code2'
-import { baiduSeoPlugin } from'vuepress-plugin-baidu-seo-next'
-import { readmorePlugin } from'vuepress-plugin-readmore-popular-next'
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
+import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
+import { baiduSeoPlugin } from 'vuepress-plugin-baidu-seo-next'
+import { readmorePlugin } from 'vuepress-plugin-readmore-popular-next'
 
 module.exports = {
 
@@ -28,6 +29,9 @@ module.exports = {
     }
   },
 
+  // 构建配置
+  bundler: viteBundler(),
+  
   // 主题配置
   theme: defaultTheme({
     docsDir: 'docs',
