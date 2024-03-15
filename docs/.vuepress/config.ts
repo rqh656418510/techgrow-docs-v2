@@ -50,7 +50,7 @@ module.exports = {
     notFound: ['这是一个 404 页面'],
     openInNewWindow: '在新窗口打开',
     editLinkText: '在 GitHub 上编辑此页',
-    logo: '/logo.png',
+    logo: '/logo.png'
   }),
   
   // 插件配置
