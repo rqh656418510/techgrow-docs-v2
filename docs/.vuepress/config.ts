@@ -2,8 +2,8 @@ import { navbar, sidebar } from './configs'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defaultTheme } from '@vuepress/theme-default'
 import { searchPlugin } from '@vuepress/plugin-search'
-import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
-import { copyCodePlugin } from 'vuepress-plugin-copy-code2'
+import { sitemapPlugin } from '@vuepress/plugin-sitemap'
+import { copyCodePlugin } from '@vuepress/plugin-copy-code'
 import { baiduSeoPlugin } from 'vuepress-plugin-baidu-seo-next'
 import { readmorePlugin } from 'vuepress-plugin-readmore-popular-next'
 
@@ -49,7 +49,8 @@ module.exports = {
     toggleColorMode: '切换夜间模式',
     notFound: ['这是一个 404 页面'],
     openInNewWindow: '在新窗口打开',
-    editLinkText: '在 GitHub 上编辑此页'
+    editLinkText: '在 GitHub 上编辑此页',
+    logo: '/logo.png',
   }),
   
   // 插件配置
@@ -61,12 +62,12 @@ module.exports = {
     searchPlugin({
       locales: {
         '/': {
-          placeholder: '',
+          placeholder: '搜索文档',
         }
       }
     }),
     sitemapPlugin({
-      excludeUrls: ['/404.html'],
+      excludePaths: ['/404.html'],
       hostname: 'https://docs.techgrow.cn',
     }),
     baiduSeoPlugin({
@@ -103,7 +104,7 @@ module.exports = {
       // 等待 DOM 节点加载完成的时间（毫秒），如果部分页面的引流功能无法生效，可适当增大此参数的值
       waitDomMills: 1000,
       // 每篇文章随机添加引流工具的概率，有效范围在 0.1 ~ 1 之间，1 则表示所有文章默认都自动添加引流工具
-      random: 1,
+      random: 1
     })
   ],
 

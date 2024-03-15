@@ -1,7 +1,7 @@
 import type { NavbarConfig } from '@vuepress/theme-default'
 
 export const zh: NavbarConfig = [{
-		text: '公众号引流教程',
+		text: '🎨 公众号引流教程',
 		children: [{
 				text: '主流博客',
 				link: '/wechat/tutorial/common/'
@@ -21,7 +21,7 @@ export const zh: NavbarConfig = [{
 		]
 	},
 	{
-		text: '开源引流插件',
+		text: '😸 开源引流插件',
 		children: [{
 				text: 'Hexo 引流插件',
 				link: 'https://github.com/rqh656418510/hexo-readmore',
@@ -37,7 +37,7 @@ export const zh: NavbarConfig = [{
 		]
 	},
 	{
-		text: '开放引流 API',
+		text: '🌈 开放引流 API',
 		children: [{
 				text: 'OpenAPI 接口',
 				link: '/wechat/openapi/api/'
@@ -49,7 +49,7 @@ export const zh: NavbarConfig = [{
 		]
 	},
 	{
-		text: '在线引流演示',
+		text: '🎨 在线引流演示',
 		children: [{
 				text: 'Hexo 博客',
 				link: 'https://www.techgrow.cn/posts/52f22f9b.html'
@@ -65,14 +65,14 @@ export const zh: NavbarConfig = [{
 		]
 	},
 	{
-		text: '获取帮助',
+		text: '❓ 获取帮助',
 		children: [{
 			text: '联系方式',
 			link: '/contact/'
 		}]
 	},
 	{
-		text: '官方平台',
+		text: '🎯 官方平台',
 		link: 'https://open.techgrow.cn/'
 	}
 ]
