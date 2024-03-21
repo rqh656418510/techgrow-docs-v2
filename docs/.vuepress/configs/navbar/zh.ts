@@ -49,7 +49,7 @@ export const zh: NavbarConfig = [{
 		]
 	},
 	{
-		text: '🎨 在线引流演示',
+		text: '🔥 在线引流演示',
 		children: [{
 				text: 'Hexo 博客',
 				link: 'https://www.techgrow.cn/posts/52f22f9b.html'
@@ -70,6 +70,10 @@ export const zh: NavbarConfig = [{
 			text: '联系方式',
 			link: '/contact/'
 		}]
+	},
+	{
+		text: '🍵 项目赞助',
+		link: '/donate/'
 	},
 	{
 		text: '🎯 官方平台',
