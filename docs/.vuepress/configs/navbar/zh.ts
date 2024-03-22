@@ -60,7 +60,7 @@ export const zh: NavbarConfig = [{
 			},
 			{
 				text: 'VuePress v2 博客',
-				link: 'https://docs.techgrow.cn/v2/wechat/demo/'
+				link: '/wechat/demo/'
 			}
 		]
 	},
