@@ -17,7 +17,7 @@
     "@vuepress/plugin-search": "2.0.0-rc.18",
     "@vuepress/plugin-sitemap": "2.0.0-rc.19",
     "@vuepress/plugin-copy-code": "2.0.0-rc.19",
-    "vuepress-plugin-baidu-seo-next": "2.0.0-rc.8.1",
-    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.8.1"
+    "vuepress-plugin-baidu-seo-next": "2.0.0-rc.8.2",
+    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.8.2"
   }
 }
