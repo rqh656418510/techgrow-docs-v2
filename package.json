@@ -11,13 +11,13 @@
   },
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "vuepress": "2.0.0-rc.8",
-    "@vuepress/bundler-vite": "2.0.0-rc.8",
-    "@vuepress/theme-default": "2.0.0-rc.20",
-    "@vuepress/plugin-search": "2.0.0-rc.18",
-    "@vuepress/plugin-sitemap": "2.0.0-rc.19",
-    "@vuepress/plugin-copy-code": "2.0.0-rc.19",
-    "vuepress-plugin-baidu-seo-next": "2.0.0-rc.8.2",
-    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.8.2"
+    "vuepress": "2.0.0-rc.12",
+    "@vuepress/bundler-vite": "2.0.0-rc.12",
+    "@vuepress/theme-default": "2.0.0-rc.33",
+    "@vuepress/plugin-search": "2.0.0-rc.33",
+    "@vuepress/plugin-sitemap": "2.0.0-rc.33",
+    "@vuepress/plugin-copy-code": "2.0.0-rc.33",
+    "vuepress-plugin-baidu-seo-next": "2.0.0-rc.12.1",
+    "vuepress-plugin-readmore-popular-next": "2.0.0-rc.12.1"
   }
 }
