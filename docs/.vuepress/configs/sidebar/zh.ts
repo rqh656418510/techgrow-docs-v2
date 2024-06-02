@@ -19,6 +19,12 @@ export const zh: SidebarConfig = {
       children: ['']
     }
   ],
+  '/wechat/tutorial/vuepress2': [
+    {
+      text: '公众号引流教程',
+      children: ['']
+    }
+  ],
   '/wechat/openapi/api': [
     {
       text: '开放引流 API',
