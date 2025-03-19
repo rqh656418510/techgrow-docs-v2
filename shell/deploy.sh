@@ -24,10 +24,10 @@ function __readINI() {
 }
 
 # 初始化连接参数
-_HOST=( $( __readINI /etc/rsyncd.ini Vuepress2 host ) )
-_USER=( $( __readINI /etc/rsyncd.ini Vuepress2 user ) )
-_MODULE=( $( __readINI /etc/rsyncd.ini Vuepress2 module ) )
-_PASSWORD_FILE=( $( __readINI /etc/rsyncd.ini Vuepress2 password_file ) )
+_HOST=( $( __readINI /etc/rsyncd.ini TechGrowDocsV2 host ) )
+_USER=( $( __readINI /etc/rsyncd.ini TechGrowDocsV2 user ) )
+_MODULE=( $( __readINI /etc/rsyncd.ini TechGrowDocsV2 module ) )
+_PASSWORD_FILE=( $( __readINI /etc/rsyncd.ini TechGrowDocsV2 password_file ) )
 
 # 源目录
 _DIST_DIR='../docs/.vuepress/dist/'
