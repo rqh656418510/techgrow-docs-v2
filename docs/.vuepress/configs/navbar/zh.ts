@@ -76,7 +76,7 @@ export const zh: NavbarConfig = [{
 		link: '/donate/'
 	},
 	{
-		text: '🏛 法律',
+		text: '🏛 法律条款',
 		children: [{
 			text: '用户协议',
 			link: '/terms/'
