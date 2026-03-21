@@ -2,13 +2,13 @@
 
 ### 依赖环境
 
-- [Node.js v18+](https://nodejs.org/en/)
+- [Node.js v20+](https://nodejs.org/en/)
 - [VuePress v2.x](https://v2.vuepress.vuejs.org/zh/)
 
 ### 项目构建
 
 ``` sh
-# 查看Node版本（建议使用v18.20.3）
+# 查看NodeJs版本（建议使用v20.20.1）
 $ node -v
 
 # 安装项目的默认依赖
